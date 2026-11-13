@@ -1,0 +1,58 @@
+Workbook audit and exploratory reanalysis
+
+The supplied workbook has the exact SHA256 named in the manuscript. All 192
+outcome formulas implement the specified rule, and all 192 cached classifications
+match independent reconstruction from literal eligibility and gate data. The
+172 common-eligible classifications all match. No normalization is required for
+the literal compiled gate labels. The 42 blank gate cells belong to seven
+ineligible rater-question records and remain blank.
+
+All reported headline Conger and Fleiss estimates reproduce. Sorting exact
+DOIs lexicographically, using PCG64 seed 20261014 and 20,000 cluster draws also
+reproduces every reported bootstrap interval to six decimals. Limited draws
+7079 and 9976 are undefined, as stated in the manuscript. This ordering must
+be made explicit for full computational reproducibility.
+
+The gate states in 04_GATE_EVIDENCE agree with 03_GATE_MATRIX. One rationale
+prefix conflicts with its state: W02-H G05 in record A is Pass, whereas
+04_GATE_EVIDENCE!L258 begins Unresolved. It is preserved and flagged.
+
+All 258 analyst-reference gate states match the recorded rules: 138 unanimous
+retentions, 63 three-vote modes, 22 Limited Pass/Not required ties, 34 other
+mixed-state resolutions, and one T03-L G01 override. The derived reference
+contains 18 Supported, 21 Not supported and four Unresolved cases; five mixed
+eligibility cases remain unclassified. All 48 source-check fields say No and
+both panel-member fields say Not convened. It is a derivative comparison.
+
+The workbook has a one-to-one mapping between 24 Paper_IDs and 24 exact DOIs.
+Among the 43 common-eligible questions there are 21 paired DOI clusters and
+one singleton, T01-L (10.1007/s11356-018-2070-7). These identifiers do not verify
+independent datasets or campaigns. External development/demonstration registers
+were not available for an overlap audit.
+
+No original Reviewer_A.xlsx, Reviewer_B.xlsx, Reviewer_C(1).xlsx or
+Reviewer_D.xlsx file accompanies the supplied workbook. The wording original
+AI-B record remains at 06_ELIGIBILITY!K31 and K34. The workbook records an
+author-reported clerical-error explanation; this analysis cannot authenticate
+that explanation, reviewer identities or the conversion of original records.
+
+NEW DESCRIPTIVE RESULTS
+
+The type-only rule Stronger -> Not supported and Limited -> Supported matches
+160/172 derived labels (93.0%). This diagnoses case-type structure, not accuracy.
+
+42 of the 54 disputed Limited question-gate units (77.8%) involve only Pass
+and Not required. Stronger has 9/66 such disputed units (13.6%). The four
+records use Not required 45, 48, 48 and 4 times, respectively, out of 258.
+
+Deleting one gate at a time changes 0, 2, 1, 1, 6 and 6 of the 172 outcomes for
+G01-G06, respectively. Removing G06 changes six records across four Stronger
+questions (five Not supported -> Supported and one Not supported -> Unresolved).
+This occurs despite 20/21 Stronger questions having a common G06 Fail, because
+other Fail gates often preserve Not supported. Thus the final category conceals
+both gate disagreement and multiple decisive constraints. Gate omission is a
+structural diagnostic, not an argument to delete necessary criteria.
+
+Leave-one-DOI-out Conger kappa ranges from 0.813245 to 0.839387 Overall and from
+0.072937 to 0.222222 in Limited. These source-omission analyses do not establish
+out-of-sample performance or remedy purposive selection.
